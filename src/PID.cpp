@@ -30,13 +30,14 @@ void PID::UpdateError(double cte) {
   /**
    * TODO: Update PID errors based on cte.
    */
-  this->p_error = -Kp *  cte;
-  this->i_error = -Ki * (int_cte);
-  this->d_error = -Kd * (diff_cte);
-
+  
   int_cte += cte;
   diff_cte = cte - prev_cte;
   prev_cte = cte;
+
+  this->p_error = -Kp *  cte;
+  this->i_error = -Ki * (int_cte);
+  this->d_error = -Kd * (diff_cte);
 
 }
 

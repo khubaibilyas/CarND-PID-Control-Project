@@ -2,6 +2,7 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
+## Reflections
 
 The coefficients for P, I and D components were chosen by doing a free trial (manual tuning) on them individually. I found each components to have the following effects : 
 
